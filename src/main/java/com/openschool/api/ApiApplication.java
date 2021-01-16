@@ -10,6 +10,8 @@ public class ApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
 
+		//Flyway.configure().baselineOnMigrate(true).load().migrate();
+
 		String hostname = System.getenv("RDS_HOSTNAME");
 		String port = System.getenv("RDS_PORT");
 		String dbname = System.getenv("RDS_DB_NAME");
