@@ -1,6 +1,6 @@
 package com.openschool.api.datasource;
 
-/*
+
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -19,4 +19,3 @@ public class Datasource {
                 .build();
     }
 }
-*/
