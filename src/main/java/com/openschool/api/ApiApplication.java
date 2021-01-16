@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class ApiApplication implements CommandLineRunner {
+public class ApiApplication {
 
 	@Autowired
 	DataSource dataSource;
@@ -34,11 +34,6 @@ public class ApiApplication implements CommandLineRunner {
 
 		// Start the migration
 		flyway.migrate();*/
-	}
-
-	@Override
-	public void run(String... args) throws Exception {
-		Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
 	}
 
 }
