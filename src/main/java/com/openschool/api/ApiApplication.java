@@ -15,7 +15,7 @@ public class ApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
 
-		String hostname = System.getenv("RDS_HOSTNAME");
+		/*String hostname = System.getenv("RDS_HOSTNAME");
 		String port = System.getenv("RDS_PORT");
 		String dbname = System.getenv("RDS_DB_NAME");
 		String username = System.getenv("RDS_USERNAME");
@@ -28,7 +28,7 @@ public class ApiApplication {
 						.load();
 
 		// Start the migration
-		flyway.migrate();
+		flyway.migrate();*/
 	}
 
 }
