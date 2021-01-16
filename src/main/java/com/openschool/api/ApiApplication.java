@@ -1,16 +1,19 @@
 package com.openschool.api;
 
 import org.flywaydb.core.Flyway;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.env.Environment;
+
+import java.util.Arrays;
 
 @SpringBootApplication
 public class ApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
-
-		//Flyway.configure().baselineOnMigrate(true).load().migrate();
 
 		String hostname = System.getenv("RDS_HOSTNAME");
 		String port = System.getenv("RDS_PORT");
