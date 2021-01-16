@@ -1,0 +1,9 @@
+server:
+    port: 5000
+
+app:
+    datasource:
+        jdbc-url: jdbc:postgresql://localhost:5432/theopenschool
+        username: postgres
+        password: elephant
+        pool-size: 30
